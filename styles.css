@@ -15,14 +15,18 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-
-  background-size: cover;
+  background-color: #021d44;
   color: #fff;
 }
 
 /* Container for content */
 .container {
   text-align: center;
+  max-width: 800px;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
 }
 
 /* Main heading */
@@ -33,19 +37,36 @@ h1 {
   color: #00d2ff;
 }
 
-/* Timer */
-#timer {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+/* Subheading */
+h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #fff;
 }
 
-.timer-box {
-  margin: 0 10px;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
+/* Paragraph text */
+p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #b8c6db;
+}
+
+/* Futuristic button */
+.button {
+  display: inline-block;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border: 2px solid #00d2ff;
   border-radius: 5px;
+  color: #00d2ff;
+  background-color: transparent;
+  transition: all 0.3s;
 }
 
-.timer-box span {
-  display: block;
+.button:hover {
+  color: #021d44;
+  background-color: #00d2ff;
+}
