@@ -5,76 +5,54 @@
   box-sizing: border-box;
 }
 
-/* Futuristic font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
-
-/* Basic styles */
+/* Apply a basic font */
 body {
   font-family: 'Roboto Mono', monospace;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #021d44;
-  color: #fff;
+  background-color: #021d44; /* Dark background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centering text */
+  padding: 20px; /* Padding around the page */
 }
 
-/* Container for content */
-.container {
-  text-align: center;
-  max-width: 800px;
-  padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
+/* Header styles */
+h1, h2 {
+  margin-bottom: 20px; /* Space below headings */
+  color: #00d2ff; /* Bright blue color for headings */
 }
 
-/* Main heading */
-h1 {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: #00d2ff;
+/* Image styling */
+img {
+  max-width: 100%; /* Full width on small screens */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Space below images */
+  border-radius: 10px; /* Rounded corners for images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow for depth */
 }
 
-/* Subheading */
-h2 {
-  font-size: 24px;
-  font-weight: 400;
-  margin-bottom: 2rem;
-  color: #fff;
-}
-
-/* Paragraph text */
+/* Style for any paragraphs */
 p {
   font-size: 16px;
-  font-weight: 300;
-  line-height: 1.5;
-  color: #b8c6db;
+  line-height: 1.6;
+  color: #b8c6db; /* Lighter text color for contrast */
+  max-width: 800px; /* Maximum width for readability */
+  margin: 0 auto; /* Centering paragraphs */
 }
 
-/* Futuristic button */
+/* Button style if needed */
 .button {
   display: inline-block;
-  font-weight: 700;
-  text-decoration: none;
-  padding: 1rem 2rem;
-  border: 2px solid #00d2ff;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
   border-radius: 5px;
-  color: #00d2ff;
-  background-color: transparent;
-  transition: all 0.3s;
+  background-color: #00d2ff; /* Bright blue background */
+  color: #021d44; /* Dark text */
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .button:hover {
-  color: #021d44;
-  background-color: #00d2ff;
-}
-
-/* Styles for images */
-img {
-  max-width: 100%; /* Ensures image is not larger than its container */
-  height: auto; /* Keeps the aspect ratio of the image */
-  display: block; /* Removes extra space below the image */
-  margin: 0 auto; /* Centers the image */
+  background-color: #007ba7; /* Darker blue on hover */
 }
