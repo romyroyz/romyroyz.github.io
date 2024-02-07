@@ -1,84 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personalized Healthcare Technology</title>
-  <style>
-    /* Basic Reset */
-    body, h1, h2, h3, p, a {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tracker</title>
+    <style>
+        body, h1, h2, h3, p, a {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-      font-family: 'Arial', sans-serif;
-      text-align: center;
-      background-color: #FFFFFF;
-      color: #333;
-      padding: 20px;
-    }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
 
-    /* Header */
-    h1 {
-      color: #007bff;
-      margin: 20px 0;
-    }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+        }
 
-    /* Subheaders and text */
-    h2, p {
-      margin: 10px 0;
-    }
+        .navbar a {
+            text-decoration: none;
+            color: #007bff;
+            margin-left: 20px;
+        }
 
-    /* Styling for images */
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-      margin: 20px 0;
-    }
+        .hero {
+            background-color: #007bff;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
 
-    /* Button styling */
-    .button {
-      background-color: #007bff;
-      color: white;
-      padding: 10px 20px;
-      margin: 20px auto;
-      display: inline-block;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: background-color 0.3s;
-    }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
 
-    .button:hover {
-      background-color: #0056b3;
-    }
+        .feature {
+            background: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
 
-    /* Footer */
-    footer {
-      margin-top: 40px;
-      padding: 20px;
-      background-color: #f1f1f1;
-      color: #333;
-    }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #007bff;
+            color: white;
+            margin-top: 20px;
+        }
 
-  </style>
+        @media (max-width: 600px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>Revolutionizing Personalized Healthcare</h1>
-  <p>Experience healthcare tailored uniquely to you, as easy as 1, 2, 3.</p>
-  <img src="https://github.com/romyroyz/romyroyz.github.io/assets/92309828/37755859-5802-4d9c-a1d0-b631637b2cb4" alt="Type 3 Civilization Image 1">
-  
-  <h2>Continuous Health Monitoring</h2>
-  <p>Our proprietary hardware continuously monitors your biomarkers, providing real-time health data directly to your fingertips.</p>
-  <img src="https://github.com/romyroyz/romyroyz.github.io/assets/92309828/b2ccfc6b-1b7c-46dd-acc6-b0a93bfd6209" alt="Type 3 Civilization Image 2">
-  
-  <a href="#" class="button">Learn More</a>
-  
-  <footer>
-    <p>Contact us for more information or to get involved.</p>
-  </footer>
+    <div class="navbar">
+        <h1>Health Tracker</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+    <div class="hero">
+        <h2>Welcome to Health Tracker</h2>
+        <p>Track your health and fitness in a way never before possible.</p>
+    </div>
+    <div class="features">
+        <div class="feature">
+            <h3>24/7 Monitoring</h3>
+            <p>Our device monitors your health metrics around the clock.</p>
+        </div>
+        <div class="feature">
+            <h3>Insightful Analytics</h3>
+            <p>Gain insights into your health and fitness trends.</p>
+        </div>
+        <div class="feature">
+            <h3>Personalized Recommendations</h3>
+            <p>Receive personalized advice based on your data.</p>
+        </div>
+    </div>
+    <footer>
+        <p>Health Tracker © 2024</p>
+    </footer>
 </body>
 </html>
